@@ -17,17 +17,17 @@ function dataDisplay() {
         Object.entries(UFOdata).forEach(function([key, value]) {
             var cell = row.append("td");
             var cell1 = cell.text(value);
-            console.log(cell1);
+            // console.log(cell1);
     });    
  });
 }
 
-function searchClick() {
+
 // Select the submit button
 var submit = d3.select("#filter-btn");
 // submit.on("click",InputDate)   
-    submit.on("click", searchData)
-}
+    submit.on("click", searchData);
+
 
 function searchData() {
     
